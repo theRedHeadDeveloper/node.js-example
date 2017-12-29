@@ -12,7 +12,7 @@ function onRequest(request, response) {
     response.end;
 }
 
-/creates the server and assigns it to port "8888"
+//creates the server and assigns it to port "8888"
 http.createServer(onRequest).listen(8888);
 //prints "the server is running" to the console once the server has been created
 console.log("The server is running");
