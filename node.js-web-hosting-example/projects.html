@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TheRedHeadDev.com</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+        body {
+            background-color:#f2f2f2;
+        }
+        h1 {
+            text-align:center;
+        }
+        .more_link {
+            font-size:160%;
+        }
+
+        /* This Is The navigation Settings For larger Devices*/
+        .nav1 ul li{
+            float:left;
+            list-style-type:none;
+            padding-right:50px;
+        }
+        .nav1 a{
+            text-decoration:none;
+            color:black;
+        }
+        .nav1 li a:hover {
+            color:#6666ff;
+        }
+
+
+
+        /* This is The navigation settings for Mobile devices*/
+        .nav2 {
+            list-style-type:none;
+            background-color:white;
+            padding:3%;
+            border-radius:20px;
+            display:none;
+        }
+        .nav2 a {
+            /* (might want to use for links)       color:#666666;*/
+            color:black;
+            text-decoration:none;
+            font-size:120%;
+        }
+
+        .nav2 a:active{
+            color: #b3daff;
+        }
+
+        #projects_content{
+            display:none;
+        }
+        #video_content{
+            display:none;
+        }
+        #blog_content{
+            display:none;
+        }
+
+
+        @media screen and (max-width: 800px){
+            .nav2{
+                display: block;
+            }
+            .nav1{
+                display: none;
+            }
+        }
+
+
+        #social_links td {
+            border:3px solid black;
+            background-color:white;
+
+        }
+        #social_links {
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        /* This is the style for the projects search bar*/
+        #project_search {
+            float:right;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+<!--navigation bar for desktop Users-->
+<div class="nav1">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="#">Store</a></li>
+    </ul>
+</div>
+<!-- The search bar that will seach for specific projects -->
+<form id="project_search">
+    <!-- Need to make sure that "textarea" is the correct type to submit to the server-->
+    <input type="textarea" value="search projects">
+</form>
+<br><br><br>
+
+
+
+<!--First video link-->
+<div>
+    <h1>Add video1 here</h1>
+    <h3>add project info here</h3>
+</div>
+<br><hr><br>
+<div>
+    <h1>Add video2 here</h1>
+    <h3>Add project info here</h3>
+</div>
+<br><hr><br>
+<div>
+    <h1>Add video3 here</h1>
+    <h3>Add project info here</h3>
+</div>
+
+<!-- Table for social media links-->
+<br />
+<table id="social_links">
+    <tr>
+        <td><p>IG</p></td>
+        <td colspan="2"><a href="#">link image</a></td>
+    </tr>
+    <tr>
+        <td><p>FB</p></td>
+        <td colspan="2"><a href="#">link image</a></td>
+    </tr>
+    <tr>
+        <td><p>YouTube</p></td>
+        <td colspan="2"><a href="#">link image</a></td>
+
+</table>
+
+</body>
+
+
+
+</html>
